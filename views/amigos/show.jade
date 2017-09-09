@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+    h1 #{model.nome}
+    p
+        b Email: #{model.email}
+    p
+        b Data de Cadastro: #{moment(model.data_cad).format('DD/MM/YYYY HH:MM:ss')}
+    br
+    br
+    a(href="/amigos" class="btn btn-primary") Voltar

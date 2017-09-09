@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+    h1 #{dados.nome}
+    p
+        b Email: #{dados.email}
+    p
+        b Site: #{dados.site}
+    p
+        b Data de Cadastro: #{moment(dados.data_cad).format('DD/MM/YYYY HH:MM:ss')}
+    br
+    br
+    a(href="/usuarios" class="btn btn-primary") Voltar
